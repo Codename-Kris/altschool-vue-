@@ -9,12 +9,17 @@
 </template>
 
 <script>
-import ColorPicker from "../composables/ColorPicker";
+import ColorPicker from "../composables/ColorPicker.js";
 
 export default {
   setup() {
     const { colors, message, matchColor } = ColorPicker();
-    return { colors, message, matchColor };
+
+    return {
+      colors,
+      message,
+      matchColor,
+    };
     // const colors = ["green", "red", "blue", "purple"];
     // let message = ref("Pick a color...");
     // const matchColor = (value) => {
