@@ -9,9 +9,8 @@
 </template>
 
 <script>
-// import { ref, reactive } from "@vue/reactivity";
+import ColorPicker from "../composables/ColorPicker";
 
-import ColorPicker from "../composables/ColorPicker.js";
 export default {
   setup() {
     const { colors, message, matchColor } = ColorPicker();
